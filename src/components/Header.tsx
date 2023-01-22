@@ -3,6 +3,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { useState } from "react";
 
 import logoImage from "../assets/logo.svg";
+import { NewHabitForm } from "./NewHabitForm";
 
 function Header() {
   return (
@@ -29,6 +30,8 @@ function Header() {
             <Dialog.Title className="text-3xl leading-tight font-extrabold">
               Criar hábito
             </Dialog.Title>
+
+            <NewHabitForm />
           </Dialog.Content>
         </Dialog.Portal>
       </Dialog.Root>
